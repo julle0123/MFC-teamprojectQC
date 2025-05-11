@@ -131,7 +131,7 @@ void CteamprojectQCView::OnDraw(CDC* pDC)
 							pDoc->resultImg[y][x]));
 			for (int y = 0; y < pDoc->imageHeight; y++) // 2번째 결과 영상 출력
 				for (int x = 0; x < pDoc->imageWidth; x++)
-					pDC->SetPixel(x + pDoc->imageWidth, y + pDoc->imageHeight + 30,
+					pDC->SetPixel(x + pDoc->imageWidth+30, y + pDoc->imageHeight,
 						RGB(pDoc->resultImg2[y][x],
 							pDoc->resultImg2[y][x],
 							pDoc->resultImg2[y][x]));
